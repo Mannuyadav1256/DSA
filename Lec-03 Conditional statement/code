@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    cout<<"hello";
+    // conditional statement 
+      int a; 
+
+    cin>>a; 
+
+    if(a>18){ 
+
+        cout<<"you are adult"; 
+
+    }else{ 
+
+        cout<<"you are not adult"; 
+
+    } 
+    // else if statement 
+
+    int marks; 
+
+    cin>>marks; 
+
+    if(marks>300){ 
+
+       cout<<"first division"; 
+
+    }else if(marks>200 && marks<300){ 
+
+       cout<<"second division"; 
+
+    }else if(marks>100 && marks<200){ 
+
+       cout<<"third division"; 
+
+    }else{ 
+
+       cout<<"fail"; 
+
+    } 
+    return 0;
+}
