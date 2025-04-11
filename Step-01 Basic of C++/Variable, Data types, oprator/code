@@ -1,1 +1,72 @@
+#include<iostream>
+using namespace std;
 
+int main(){
+    //variable is container that store data in memory
+    int a = 23 ;
+    //here is a varible that store integer value, takes memory 4 bytes
+    cout<<a <<endl;
+
+    //here is a char data types that store character value, he takes memory 1 byte
+    char grade = 'a';
+    cout<<grade<<endl;
+
+    //float data type, takes momory 4 bytes 
+    float PI = 3.14f;
+    cout<<PI<<endl;
+
+    //Boolean data type that store boolean value , true or false, takes memory 1 byte
+    bool isadult = true;
+    cout<<isadult<<endl;
+    //but output store in 0 or 1 , true==1,false==0
+
+    //type casting & type conversion
+    double price = 200.99;
+    int newprice = (int)price;
+    cout<<newprice<<endl;
+    //output- 200
+
+    //input in c++
+    int age;
+    cout<<"enter your age";
+    cin>>age;
+    cout<<"your age is "<<age<< endl;
+    
+    //oprators
+    //1.Arithmetic oprator
+    int a = 3, b = 6;
+    cout<<(a+b);
+    cout<<(a-b);
+    cout<<(a*b);
+    cout<<(a/b);
+
+    //2. relational oprator
+    cout<<(a<b);
+    cout<<(a>b);
+    cout<<(a<=b);
+    cout<<(a>=b);
+    cout<<(a==b);
+    cout<<(a!=b);
+
+    //3. logical oprator
+    cout<<(a<b)||(a>b);
+    cout<<(a<b)&&(a>b);
+    cout<<!(a==b);
+
+    //sum of two number
+    int a, b ;
+    cout<<"enter a:";
+    cin>>a;
+    cout<<"enter b:";
+    cin>>b;
+    int sum = a + b;
+    cout<< sum;
+
+    //unary oprator
+     //increment++
+     //decrement --
+    
+    return 0 ;
+
+
+}
