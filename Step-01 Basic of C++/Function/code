@@ -1,1 +1,18 @@
+#include <iostream>
+using namespace std;
 
+string myintro(){ //function
+ string name = "hello, my name is mannu yadav";
+  return name;
+}
+
+int sum(int a, int b){ //parameters 
+  int s = a + b; 
+ return s; 
+} 
+
+int main(){   //main function
+ cout<<myintro();
+ cout<< sum(3,4);// arguments 
+  return 0;
+}
