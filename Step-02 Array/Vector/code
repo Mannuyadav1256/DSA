@@ -1,1 +1,25 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
+int main() { 
+ vector<int>vec;  // empty vector
+ vector<int>vec1(5); //vector with 5 element and value store 0
+ vector<int>vec2(5,3);// vector with 5 element and value store 3
+
+//vector function
+vector<int>vec;//empty vector
+ vec.push_back(1);//add element in array
+ vec.push_back(4);
+ vec.push_back(47);
+ vec.pop_back();// remove last element of vector
+ cout<<vec.size(); //return vector size
+ for(int i: vec){
+  cout<<i;           //accessing vector element
+ }
+ 
+ return 0; 
+}  
+
 
