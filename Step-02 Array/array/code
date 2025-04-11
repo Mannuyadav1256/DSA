@@ -1,1 +1,59 @@
+#include <iostream>
+using namespace std;
+
+
+int main() { 
+ //loops in array
+  int arr[5] = {1,2,3,4,5};
+ int sz = 5;
+ for(int i=0; i<sz; i++){
+  cout<<arr[i]<<endl;
+ }
+
+  //find smallest value in array
+  int arr[5] = {1,2,3,4,5};
+  int smallest = INT_MAX;
+  int sz = 5;
+ for(int i=0; i<sz; i++){
+   if(arr[i]<smallest){
+    smallest = arr[i];
+   }
+ }
+ cout<<"smallest value is:"<<smallest;
+
+  //find largest value in array
+   int arr[5] = {1,2,3,4,5};
+  int largest = INT_MIN;
+  int sz = 5;
+ for(int i=0; i<sz; i++){
+   if(arr[i]>largest){
+    largest = arr[i];
+   }
+ }
+ cout<<"largest value is:"<<largest;
+
+  //linear search
+  int arr[5] = {1,2,3,4,5};
+  int sz = 5;
+  int target = 4;
+  for(int i=0; i<sz; i++){
+    if(arr[i]==target){
+      cout<<arr[i];
+    }
+  }
+
+  //reverse array
+  int arr[5] = {1,2,3,4,5};
+  int sz = 5;
+ int start = 0;
+ int end = sz-1;
+ if(start<end){
+   swap(arr[start] , arr[end]);
+   start++;
+ }
+  for(int i=0; i<sz; i++){
+    cout<<arr[i];
+  }
+ return 0; 
+}  
 
