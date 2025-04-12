@@ -14,5 +14,30 @@ int main() {
     }
     cout<<endl;
  }
+// Maxium Subarray sum 
+ int sz = 5;
+ int arr[5] = {1,-2,3,-4,5};
+ int maxsum = 0;
+ for(int st=0; st<sz; st++){
+    int curentsum = 0;
+    for(int end=st; end<sz; end++){
+        curentsum += arr[end];
+        maxsum = max(curentsum,maxsum);  
+    } 
+ }
+  cout<<maxsum<<endl;
+
+//Kadane'algorithm
+ int nums[3] = {1,-2,3};
+ int currSum = 0, maxSum = INT_MIN;
+        for(int val : nums){
+            currSum += val;
+            maxSum = max(currSum, maxSum);
+
+            if(currSum<0){
+                currSum = 0;
+            }
+        }
+        cout<<maxSum;
  return 0; 
 }  
