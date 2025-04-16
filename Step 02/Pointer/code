@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a = 5;
+    cout<<&a;
+
+//output - 0x61ff0c // this the memory address of a
+
+//pointer
+    int* ptr = &a;  //* means pointer
+    cout<<ptr<<endl; 
+    cout<<&a;//&a means address of a
+
+
+//pointer to pointer
+    int** ptr2 = &ptr; // pointer to pointer
+    cout<<&ptr<<endl;
+    cout<<ptr2;
+
+//Derefrence oprator
+cout<<*(&a);//*(&a) means access those value who store in address of a
+}
