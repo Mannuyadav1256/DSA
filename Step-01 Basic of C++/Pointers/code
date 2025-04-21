@@ -1,0 +1,67 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a = 5;
+    cout<<&a;
+
+//output - 0x61ff0c // this the memory address of a
+
+//pointer
+    int* ptr = &a;  //* means pointer
+    cout<<ptr<<endl; 
+    cout<<&a;//&a means address of a
+
+
+//pointer to pointer
+    int** ptr2 = &ptr; // pointer to pointer
+    cout<<&ptr<<endl;
+    cout<<ptr2;
+
+//Derefrence oprator
+cout<<*(&a);//*(&a) means access those value who store in address of a
+
+    //Question
+    int a = 5;
+    int* p = &a; 
+    int** q = &p;
+    
+    cout<<*p<<endl;
+    cout<<**q<<endl;
+    cout<<p<<endl;
+    cout<<*q<<endl;
+}
+
+//pass by value 
+void changeA(int a){//pass by value
+     a = 20;
+}
+
+int main(){
+    int a = 10;
+    changeA(a);
+    cout<<"inside main function : "<< a <<endl;//value not change in main function
+    return 0; 
+}
+//pass by refrence
+void changeA(int *ptr){//pass by reference
+  *ptr = 20;
+}
+
+int main(){
+    int a = 10;
+    changeA(&a);
+    cout<<"inside main function : "<< a <<endl;//value change in main function
+    return 0; 
+}
+//pass by refrence using alias
+void changeA(int &b){//and here &b means alias
+  b = 20;          
+}
+
+int main(){
+    int a = 10;
+    changeA(a);
+    cout<<"inside main function : "<< a <<endl;//value change in main function
+    return 0; 
+}
