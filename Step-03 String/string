@@ -1,1 +1,26 @@
+#include<iostream>
+#include <cstring>//for strlen
+using namespace std;
 
+int main() {
+    //character array
+    char str[] = {'a','b','c','\0'};
+    
+    cout << str << endl; // output of character array
+    cout << strlen(str) << endl; //length of character array
+    
+    //input of character array
+    cout<<"enter your char array : ";
+    cin.getline(str,100);
+    cout<<"output : " << str << endl;
+    return 0;
+}
+
+// Reverse string
+ void reverseString(vector<char>& s) {
+        int st = 0, end = s.size()-1;
+
+        while(st < end) {
+            swap(s[st++],s[end--]);
+        }
+    }
